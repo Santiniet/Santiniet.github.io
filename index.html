@@ -1,70 +1,18 @@
-<!doctype html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Santiniet.github.io by Santiniet</title>
+---
+layout: default
+---
 
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-  </head>
-  <body>
-    <div class="wrapper">
-      <header>
-        <h1>Santiniet.github.io</h1>
-        <p></p>
+<div class="posts">
+  {% for post in site.posts %}
+    <article class="post">    
+      
+      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
 
-
-        <p class="view"><a href="https://github.com/Santiniet">View My GitHub Profile</a></p>
-
-      </header>
-      <section>
-        <h3>
-<a id="santiniet-blog" class="anchor" href="#santiniet-blog" aria-hidden="true"><span class="octicon octicon-link"></span></a>Santiniet Blog.</h3>
-
-<p>Hello! My name is Santiago Nieto and this is my open blog to talk about some issues that matter to me, feel free to comment and if you want feel free to clone this site!:</p>
-
-<pre><code>$ cd Santiniet/Santiniet.github.io
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
-
-<h3>
-<a id="personal-information" class="anchor" href="#personal-information" aria-hidden="true"><span class="octicon octicon-link"></span></a>Personal information</h3>
-
-<p>I'm a System engineer and computer science student at Universidad Nacional de Colombia.</p>
-
-<h3>
-<a id="interests" class="anchor" href="#interests" aria-hidden="true"><span class="octicon octicon-link"></span></a>Interests</h3>
-
-<ul>
-<li>Programming</li>
-<li>Open source software</li>
-<li>Mixed Martial arts</li>
-<li>Extreme sports</li>
-</ul>
-
-<h3>
-<a id="projects-and-contributions" class="anchor" href="#projects-and-contributions" aria-hidden="true"><span class="octicon octicon-link"></span></a>Projects and Contributions</h3>
-
-<p>Wanna see my Github repo? Follow this <a href="https://github.com/Santiniet">link</a>.</p>
-
-<h3>
-<a id="support-or-contact" class="anchor" href="#support-or-contact" aria-hidden="true"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
-
-<p>Facebbok: /santiniet
-Twitter: <a href="https://github.com/santiniet" class="user-mention">@santiniet</a>
-Edu Mail: <a href="mailto:snietoq@unal.edu.co">snietoq@unal.edu.co</a></p>
-      </section>
-      <footer>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
-      </footer>
-    </div>
-    <script src="javascripts/scale.fix.js"></script>
-    
-  </body>
-</html>
+      <div class="entry">
+        {{ post.content | truncatewords:40}}
+      </div>
+      
+      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
+    </article>
+  {% endfor %}
+</div>
