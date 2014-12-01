@@ -1,5 +1,5 @@
 ---
-published: true
+published: false
 ---
 
 ## Open Beehives project review
@@ -11,6 +11,7 @@ One project that has caught my attention is a project called [Open Source Beehiv
 Open source Beehives's mission is simple, save the honeybees by building a data set of honeybees behaviour information for scientific and preservation research, and they do it by building a network of sensors around the world placed on the beehives of people that want to contribute to this project... sound simple right?. In fact it is a simple as it sounds OSBeehives have different components that build the entire project collaboration method, the standard sketch is:
 
 1.Beekeeping
+
 
 2.Beehives
 
