@@ -2,6 +2,11 @@
 published: true
 ---
 
+---
+layout: post
+---
+
+
 ## Open Beehives project review
 
 For some months I've been interested in open source projects mainly because right now I'm enrolled in a Open source software course on my university. Not that I've never been interested before this course, it's just that this course have inspired me to dive deep into the open source philosophy.
