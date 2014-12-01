@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 ---
 
 ## Open Beehives project review
